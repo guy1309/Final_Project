@@ -1,0 +1,1 @@
+export const baseUrl = 'http://localhost:54842/swagger/v1/swagger.json';
