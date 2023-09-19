@@ -13,7 +13,8 @@ import CustomerList from './admin/CustomerList';
 import Medicine from './admin/Medicine';
 import Receipt from './users/Receipt';
 import SideMenu from './users/SideMenu';
-
+import AboutUs from './users/AboutUs';
+import Footer from './users/Footer';
 
 
 export default function RouterPage()
@@ -27,6 +28,7 @@ export default function RouterPage()
                 <Route path='/myorders' element={ <Orders /> } />
                 <Route path='/profile' element={ <Profile /> } />
                 <Route path='/cart' element={ <Cart /> } />
+                <Route path='/aboutus' element={ <AboutUs /> } />
            
                 <Route path='/admindashboard' element={ <AdminDashboard /> } />
                 <Route path='/adminorders' element={ <AdminOrders /> } />
@@ -40,6 +42,7 @@ export default function RouterPage()
                 <Route path='/sidemenu' element={ <SideMenu /> } />
 
             </Routes>
+            <Footer />
         </Router>
     )    
 }

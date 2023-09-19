@@ -60,6 +60,11 @@ export  default function Header(){
                   Cart
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link to="/aboutus" className="nav-link">
+                  AboutUs
+                </Link>
+              </li>
             </ul>
             <form className="form-inline my-2 my-lg-0">
               <button

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import {baseUrl} from './constant';
 import axios from "axios";
 
+
 function App() {
   const [firstName, setFirstName] = useState("");
   const [lastname, setLastname] = useState("");
@@ -168,6 +169,7 @@ function App() {
         </div>
       </section>
     </div>
+  
   </Fragment>
 );
 }
