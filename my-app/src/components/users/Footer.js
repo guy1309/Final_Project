@@ -14,7 +14,7 @@ const Footer = () => {
  <section className='footer-info'>
 <section className='footer-info-left'>
 <section className='footer-info_name'>
-software Engineer Haydin
+software Engineer guy
 </section>
 <section className='footer-info_returnes'>
 Returns policy
@@ -25,7 +25,7 @@ Delivary
 
 <section className='footer-info-center'>
 <section className='footer-info_email'>
-myBudget@gmail.com
+Emdicine@gmail.com
 </section>
 <section>
 <section className='footer-info_terms'>
@@ -41,7 +41,7 @@ myBudget@gmail.com
  09-2067356
 </section>
 <section className='footer-info_contact'>
-@2022
+@2023
 <br />
 Contact us
     </section>

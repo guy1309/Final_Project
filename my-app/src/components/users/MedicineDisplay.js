@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import axios from "axios";
-import { baseUrl } from "../constant";
+import SwaggerUI from 'swagger-ui-react';
 import Header from "./Header";
 
 export default function MedicineDisplay() {
@@ -15,7 +15,7 @@ export default function MedicineDisplay() {
     const data = {
       Email: "Admin",
     };
-    const url = `${baseUrl}/api/Admin/cartList`;
+    const url = `${SwaggerUI}/api/Admin/cartList`;
     axios
       .post(url, data)
       .then((result) => {
@@ -36,7 +36,7 @@ export default function MedicineDisplay() {
       Quantity : quantity,
       Email: localStorage.getItem("username"),
     };
-    const url = `${baseUrl}/api/Medicines/addToCart`;
+    const url = `${SwaggerUI}`;
     axios
       .post(url, data)
       .then((result) => {

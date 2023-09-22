@@ -1,6 +1,6 @@
 import React, { useEffect, useState, Fragment } from 'react'
 import axios from "axios";
-import { baseUrl } from "../constant";
+import SwaggerUI from 'swagger-ui-react';
 import {
     useParams,
    
@@ -26,7 +26,7 @@ const Receipt = () => {
             type: type,
             Email: localStorage.getItem("username"),
         };
-        const url = `${baseUrl}/api/Medicines/orderList`;
+        const url = `${SwaggerUI}/api/Medicines/orderList`;
         axios
             .post(url, data)
             .then((result) => {

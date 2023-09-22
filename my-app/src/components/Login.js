@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {baseUrl} from './constant';
+import SwaggerUI from 'swagger-ui-react';
 import { Link } from "react-router-dom";
 import axios from "axios";
 import './Login.css';
@@ -30,7 +30,7 @@ export default function Login()
       Email: email,
       Password: password,
     };
-    const url = `${baseUrl}/api/Users/login`;
+    const url = `${SwaggerUI}/api/Users/login`;
     axios
       .post(url, data)
       .then((result) => {

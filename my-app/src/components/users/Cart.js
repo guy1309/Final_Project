@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import axios from "axios";
 import Header from "./Header";
-import { baseUrl } from "../constant";
+import SwaggerUI from 'swagger-ui-react';
 
 export default function Cart() {
   const [data, setData] = useState([]);
@@ -14,7 +14,7 @@ export default function Cart() {
     const data = {
       Email: localStorage.getItem("username"),
     };
-    const url = `${baseUrl}/api/Admin/cartList`;
+    const url = `${SwaggerUI }/api/Admin/cartList`;
     axios
       .post(url, data)
       .then((result) => {
@@ -33,7 +33,7 @@ export default function Cart() {
     const data = {
       Email: localStorage.getItem("username")
     };
-    const url = `${baseUrl}/api/Medicines/placeOrder`;
+    const url = `${SwaggerUI }/api/Medicines/placeOrder`;
     axios
       .post(url, data)
       .then((result) => {
@@ -54,7 +54,7 @@ export default function Cart() {
       ID: id,
       Email: localStorage.getItem("username"),
     };
-    const url = `${baseUrl}/api/Medicines/removeFromCart`;
+    const url = `${SwaggerUI}`;
     axios
       .post(url, data)
       .then((result) => {

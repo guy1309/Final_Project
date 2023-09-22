@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import axios from "axios";
 import Header from "./Adminheader";
-import { baseUrl } from "../constant";
+import SwaggerUI from 'swagger-ui-react';
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "../users/modal.css";
@@ -27,7 +27,7 @@ export default function AdminOrders() {
       type: type,
       Email: localStorage.getItem("username"),
     };
-    const url = `${baseUrl}/api/Medicines/orderList`;
+    const url = `${SwaggerUI}/api/Medicines/orderList`;
     axios
       .post(url, data)
       .then((result) => {
@@ -53,7 +53,7 @@ export default function AdminOrders() {
 
   const handleOrderStatus =(e) =>{
     e.preventDefault();
-    const url = `${baseUrl}/api/Admin/updateOrderStatus`;
+    const url = `${SwaggerUI}/api/Admin/updateOrderStatus`;
     const data = {  
       OrderNo: orderNo,
       OrderStatus: orderStatus

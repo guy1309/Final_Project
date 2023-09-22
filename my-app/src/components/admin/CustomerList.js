@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import axios from "axios";
 import Header from "./Adminheader";
-import { baseUrl } from "../constant";
+import SwaggerUI from 'swagger-ui-react';
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "./modal.css";
@@ -18,7 +18,7 @@ export default function CustomerList() {
   }, []);
 
   const getData = () => {
-    const url = `${baseUrl}/api/Admin/userList`;
+    const url = `${SwaggerUI}/api/Admin/userList`;
     axios
       .get(url)
       .then((result) => {
@@ -39,7 +39,7 @@ export default function CustomerList() {
 
   const handleManageFunds =(e) =>{
     e.preventDefault();
-    const url = `${baseUrl}/api/Admin/updateFund`;
+    const url = `${SwaggerUI}/api/Admin/updateFund`;
     const data = {  
       Email: email,
       Fund: funds

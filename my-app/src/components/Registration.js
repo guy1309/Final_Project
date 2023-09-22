@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
-import {baseUrl} from './constant';
 import axios from "axios";
+import SwaggerUI from "swagger-ui-react";
 
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
     }
 
     e.preventDefault();
-    const url = `${baseUrl}/api/Users/registration `;
+    const url = `${SwaggerUI}`;
     const data = {
       FirstName: firstName,
       LastName: lastname,      

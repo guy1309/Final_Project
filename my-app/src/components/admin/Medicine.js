@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import axios from "axios";
 import AdminHeader from "./Adminheader";
-import { baseUrl } from "../constant";
+import SwaggerUI from 'swagger-ui-react';
 
 export default function Medicine() {
   const [data, setData] = useState([]);
@@ -25,7 +25,7 @@ export default function Medicine() {
       type: "Get",
       Email: localStorage.getItem("loggedEmail"),
     };
-    const url = `${baseUrl}/api/Admin/addUpdateMedicine`;
+    const url = `${SwaggerUI}/api/Admin/addUpdateMedicine`;
     axios
       .post(url, data)
       .then((result) => {
@@ -46,7 +46,7 @@ export default function Medicine() {
       Id: id,
       Type: "Delete",
     };
-    const url = `${baseUrl}/api/Admin/addUpdateMedicine`;
+    const url = `${SwaggerUI}/api/Admin/addUpdateMedicine`;
     axios
       .post(url, data)
       .then((result) => {
@@ -68,7 +68,7 @@ export default function Medicine() {
       ID: id,
       Type: "GetByID",
     };
-    const url = `${baseUrl}/api/Admin/addUpdateMedicine`;
+    const url = `${SwaggerUI}/api/Admin/addUpdateMedicine`;
     axios
       .post(url, data)
       .then((result) => {
@@ -100,7 +100,7 @@ export default function Medicine() {
     formdata.append("FileName", fileName);
 
     try {
-      const res = await axios.post(`${baseUrl}/api/Admin/UploadFile`, formdata);
+      const res = await axios.post(`${SwaggerUI}/api/Admin/UploadFile`, formdata);
       console.log(res);
       if (
         res.data.statusCode === 200 &&
@@ -117,7 +117,7 @@ export default function Medicine() {
           ImageUrl: fileName,
           Type: "Add",
         };
-        const url = `${baseUrl}/api/Admin/addUpdateMedicine`;
+        const url = `${SwaggerUI}/api/Admin/addUpdateMedicine`;
         axios
           .post(url, data)
           .then((result) => {
@@ -160,7 +160,7 @@ export default function Medicine() {
       ImageUrl: "",
       Type: "Update",
     };
-    const url = `${baseUrl}/api/Admin/addUpdateMedicine`;
+    const url = `${SwaggerUI}/api/Admin/addUpdateMedicine`;
     axios
       .post(url, data)
       .then((result) => {

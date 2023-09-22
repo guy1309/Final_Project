@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import axios from "axios";
 import Header from "./Header";
-import { baseUrl } from "../constant";
+import SwaggerUI from 'swagger-ui-react';
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "./modal.css";
@@ -24,7 +24,7 @@ export default function Orders() {
       type: type,
       Email: localStorage.getItem("username"),
     };
-    const url = `${baseUrl}/api/Medicines/orderList`;
+    const url = `${SwaggerUI}`;
     axios
       .post(url, data)
       .then((result) => {
