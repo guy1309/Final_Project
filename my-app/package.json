@@ -17,7 +17,6 @@
     "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
     "swagger-ui-react": "^5.7.1",
-    "proxy":"http://localhost:54842/swagger/index.html",
     "web-vitals": "^2.1.4"
    },
   "scripts": {
