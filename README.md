@@ -9,3 +9,7 @@
 
 * להכנס לתיקיה `frontend`
 * להריץ `npm run start`
+  
+גיא מזרחי  D13222ER -מס קורס,
+0505762441
+guymiz1309@gmail.com
