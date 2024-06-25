@@ -1,0 +1,19 @@
+.modal-dialog {
+    max-width: 70%;
+    
+}
+h1{
+    color: rgb(134, 171, 252);
+    text-align: center;
+}
+.body1{
+    background-color: #23242a;
+    min-height: 87vh; 
+    }
+
+    .text{
+    color: rgb(255, 255, 255);
+    margin-bottom: 110px;
+    font-size: 27px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
