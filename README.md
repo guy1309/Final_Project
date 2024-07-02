@@ -4,6 +4,7 @@
 
 * לפתוח `Emedicine\Emedicine.sln`
 * לבצע Build ו-Run
+* לבצע דרך IIS EXPRESS
 
 כדי להפעיל צד לקוח:
 
